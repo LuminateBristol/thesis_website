@@ -104,18 +104,6 @@ nav:
       - "Ch7 - Info Selection": supplements/ch7-supplementary.md
   - Simulator:
     - Overview: simulator/index.md
-    - Sim Docs:
-      - Simulator Files:
-        - sim.py: simulator_files/sim.md
-        - objects.py: simulator_files/objects.md
-        - warehouse.py: simulator_files/warehouse.md
-        - viz_sim.py: simulator_files/viz_sim.md
-        - hive_mind.py: simulator_files/hive_mind.md
-        - bt_setup.py: simulator_files/bt_setup.md
-      - Run Files:
-        - run_no_viz.py: run_files/run_no_viz.md
-        - run_viz.py: run_files/run_viz.md
-        - run_evolution_traffic.py: run_files/run_evolution_traffic.md
-    - "Migrate from Bitbucket": simulator/migration.md
+    
   - SWOOT: 
     - SWOOT: swoot/index.md
