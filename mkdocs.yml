@@ -1,8 +1,8 @@
 
 site_name: "Hybrid Swarms - Thesis Website"
 site_description: "Supplementary materials, summaries, simulator docs, and videos."
-site_url: "https://USERNAME.github.io/thesis-supplementary/"
-repo_url: "https://github.com/USERNAME/thesis-supplementary"
+site_url: "https://luminatebristol.github.io/thesis_website/summaries/vision/"
+repo_url: "https://github.com/LuminateBristol"
 use_directory_urls: true
 
 theme:
@@ -90,13 +90,13 @@ extra:
 
 nav:
   - Home: index.md
-  - Thesis in a Nutshell:
-      - "Abstract": summaries/abstract.md
-      - "Hybrid Swarm Framework": summaries/vision.md
-      - "Global Information Sharing": summaries/ch4-global-info.md
-      - "Network Analysis": summaries/ch5-network-analysis.md
-      - "The Hive Architecture": summaries/ch6-hive-architecture.md
-      - "Information Selection": summaries/ch7-auto-info-selection.md
+  # - Thesis in a Nutshell:
+  #     - "Abstract": summaries/abstract.md
+  #     - "Hybrid Swarm Framework": summaries/vision.md
+  #     - "Global Information Sharing": summaries/ch4-global-info.md
+  #     - "Network Analysis": summaries/ch5-network-analysis.md
+  #     - "The Hive Architecture": summaries/ch6-hive-architecture.md
+  #     - "Information Selection": summaries/ch7-auto-info-selection.md
   - Supplementary Info:
       - "Ch4 - Global Info": supplements/ch4-supplementary.md
       - "Ch5 - Network Analysis": supplements/ch5-supplementary.md
@@ -105,5 +105,3 @@ nav:
   - Simulator:
     - Overview: simulator/index.md
     
-  - SWOOT: 
-    - SWOOT: swoot/index.md

@@ -1,6 +1,7 @@
 # The Hybrid Swarm Concept
 
-<img src="assets/images/hybrid_swarm_framework_multi.png" alt="Hybrid swarm framework" width="600"/>
+![Hybrid swarm framework](../assets/images/hybrid_swarm_framework_multi.png)
+
 
 Our proposed hybrid swarm framework combines the collective knowledge sharing observed in social honeybees with the modular reactivity of behaviour-based control. 
 
