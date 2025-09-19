@@ -1,0 +1,121 @@
+
+site_name: "Hybrid Swarms - Thesis Website"
+site_description: "Supplementary materials, summaries, simulator docs, and videos."
+site_url: "https://USERNAME.github.io/thesis-supplementary/"
+repo_url: "https://github.com/USERNAME/thesis-supplementary"
+use_directory_urls: true
+
+theme:
+  name: material
+  logo: assets/images/example-figure.png  # Replace with your logo path
+  favicon: assets/images/example-figure.png  # Replace with your favicon path
+  font:
+    text: Roboto
+    code: Fira Mono
+  palette:
+    - scheme: slate
+      primary: deep blue
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      background: '#282a36'
+      surface: '#282a36'
+      onSurface: '#f8f8f2'
+      onBackground: '#f8f8f2'
+      code: '#44475a'
+      link: '#8be9fd'
+      linkVisited: '#bd93f9'
+    - scheme: default
+      primary: deep blue
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["code"]
+          options:
+            docstring_style: google
+            show_source: true
+  - git-revision-date-localized:
+      enabled: true
+      fallback_to_build_date: true
+  - glightbox
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/USERNAME
+
+nav:
+  - Home: index.md
+  - Thesis in a Nutshell:
+      - "Abstract": summaries/abstract.md
+      - "Hybrid Swarm Framework": summaries/vision.md
+      - "Global Information Sharing": summaries/ch4-global-info.md
+      - "Network Analysis": summaries/ch5-network-analysis.md
+      - "The Hive Architecture": summaries/ch6-hive-architecture.md
+      - "Information Selection": summaries/ch7-auto-info-selection.md
+  - Supplementary Info:
+      - "Ch4 - Global Info": supplements/ch4-supplementary.md
+      - "Ch5 - Network Analysis": supplements/ch5-supplementary.md
+      - "Ch6 - The Hive": supplements/ch6-supplementary.md
+      - "Ch7 - Info Selection": supplements/ch7-supplementary.md
+  - Simulator:
+    - Overview: simulator/index.md
+    - Sim Docs:
+      - Simulator Files:
+        - sim.py: simulator_files/sim.md
+        - objects.py: simulator_files/objects.md
+        - warehouse.py: simulator_files/warehouse.md
+        - viz_sim.py: simulator_files/viz_sim.md
+        - hive_mind.py: simulator_files/hive_mind.md
+        - bt_setup.py: simulator_files/bt_setup.md
+      - Run Files:
+        - run_no_viz.py: run_files/run_no_viz.md
+        - run_viz.py: run_files/run_viz.md
+        - run_evolution_traffic.py: run_files/run_evolution_traffic.md
+    - "Migrate from Bitbucket": simulator/migration.md
+  - SWOOT: 
+    - SWOOT: swoot/index.md

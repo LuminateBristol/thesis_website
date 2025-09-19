@@ -1,0 +1,9 @@
+# Chapter X — Title (Summary)
+
+**Aims**: ...
+
+**Findings**: ...
+
+**Contributions**: ...
+
+> Duplicate this file for additional chapters and add to `mkdocs.yml` under `nav`.

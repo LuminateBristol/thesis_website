@@ -1,0 +1,29 @@
+# The Hybrid Swarm Concept
+
+<img src="assets/images/hybrid_swarm_framework_multi.png" alt="Hybrid swarm framework" width="560"/>
+
+Our proposed hybrid swarm framework combines the collective knowledge sharing observed in social honeybees with the modular reactivity of behaviour-based control. 
+
+Layer-0 is designed first, following the principles of a typical behaviour-based controller. This layer is the same as a typical swarm; it reacts solely to local sensory inputs (and, where available, local peer-to-peer communications), enabling the swarm to perform its tasks independently of any global infrastructure. In conventional swarm systems, this is the only operational layer, and all behaviours are optimised for this purely distributed mode.
+
+Once layer-0 has been verified and proven capable, layer-1 is added. This layer acts as an interface to a globally accessible collective knowledge base. The connection can be established via an externally provided network (e.g., Wi-Fi, cellular) or an ad hoc mesh network. Layer-1 functions as a shared storage repository, enabling robots to publish and retrieve information gathered by others, thereby enhancing swarm performance through global information availability.
+
+Each robot's locally gathered knowledge forms the foundation. The behavioural module remains at the core but now integrates both local and global inputs, ensuring that control remains fully distributed. All decisions are made locally on each robot, while the global repository serves only as an optional supplementary source. We describe this as a decoupling between the local control policy and the global communication policy, which guarantees swarm robustness, since failures in global information sharing do not affect the independent local controllers, thereby preserving resilience to communication failure.
+
+The result is a swarm designed to retain the robustness and autonomy of a purely distributed system while leveraging the capabilities afforded by global information sharing. This could include remote monitoring of swarm state via any internet-connected device, online learning through integration of the globally accessible repository into feedback and reward mechanisms, long-range cooperation in sparse swarms, enabling coordination without strict spatial density requirements and human-in-the-loop interaction, allowing operators to adjust task directives or priorities without relying on slow propagation through local-only communication networks.
+
+These benefits, of course, are contingent upon the availability of a reliable communication infrastructure. In scenarios where connectivity is intermittent or unavailable, the swarm seamlessly reverts to Layer 0 operation, ensuring uninterrupted task execution. This property distinguishes the proposed framework from centralised systems, which may fail when connectivity is lost.
+
+In summary, this hybrid architecture bridges the strengths of distributed swarm control with the advantages of global information availability, forming the basis for the experiments and evaluations that follow. However, these claims require systematic validation under controlled experimental conditions. Designing and implementing such a controller, particularly when decoupling two inherently linked policies, presents non-trivial challenges. This thesis, therefore, aims to formalise the architecture and evaluate its performance in both simulation and real-world contexts.
+
+# Long Term Vision
+
+The ultimate vision for this framework is to enable robots to interact with centralised knowledge bases autonomously, connecting, contributing, and retrieving information only when and where it is beneficial for their current objectives. In this future state, the knowledge base layer is no longer tied to a single, fixed repository but exists as a network of internet-accessible resources, each providing a range of different information types.
+
+This concept mirrors the way humans use online applications today. For example, we may open navigation apps for sharing positional data for better routing, a weather service for meteorological data, or a forum to share information about local events. In an analogous robotic context, a robot might connect to a mapping database to share and access real-time navigation data, link to a vision-based repository to collaboratively search for a missing pet. The focus is still on improved coordination, but the decision-making remains local and robot-led.
+
+In this vision, the decision-making is entirely robot-led. Individual agents would determine which central knowledge base(s) are relevant to the task at hand, decide what information to contribute, and at what level of detail and formulate targeted requests to retrieve only the most relevant data. Such autonomy allows robots to treat these knowledge bases as on-demand resources, integrating them seamlessly into their distributed decision-making without human intervention.
+
+Over time, this ecosystem of knowledge bases would evolve into a task-agnostic and robot-agnostic network. This generalised digital infrastructure can enhance the performance of any distributed robotic system, regardless of platform, task type, or environment. In this way, the architecture is not a bespoke solution for a single application but a scalable, flexible, and reusable foundation for a wide range of future multi-robot systems.
+
+This long-term perspective situates the hybrid swarm framework as not merely a means of augmenting swarm performance in the present but as a stepping stone toward a globally connected, robot-driven web of knowledge. In this system, collaboration occurs not only between robots in a single swarm but also between all robotic systems connected to the network.
