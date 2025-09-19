@@ -1,4 +1,4 @@
 
 # Simulator — Overview
 
-This section documents the simulator used in the thesis experiments. All documentation is auto-generated using MKDOCS.
+All code can be found in the publically accessible BitBucket repo: https://bitbucket.org/hauertlab/hive_sim/src/main/
