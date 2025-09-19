@@ -1,0 +1,3 @@
+[submodule "code/hive_sim"]
+	path = code/hive_sim
+	url = https://bitbucket.org/hauertlab/hive_sim.git
