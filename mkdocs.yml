@@ -2,13 +2,13 @@
 site_name: "Hybrid Swarms - Thesis Website"
 site_description: "Supplementary materials, summaries, simulator docs, and videos."
 site_url: "https://luminatebristol.github.io/thesis_website/summaries/vision/"
-repo_url: "https://github.com/LuminateBristol"
+repo_url: "https://bitbucket.org/hauertlab/hive_sim/src/main/"
 use_directory_urls: true
 
 theme:
   name: material
-  logo: assets/images/example-figure.png  # Replace with your logo path
-  favicon: assets/images/example-figure.png  # Replace with your favicon path
+  logo: assets/images/dots.png  # Replace with your logo path
+  favicon: assets/images/clicker.png  # Replace with your favicon path
   font:
     text: Roboto
     code: Fira Mono
@@ -42,7 +42,8 @@ theme:
     - content.code.copy
     - content.action.edit
   icon:
-    repo: fontawesome/brands/github
+    repo: material/source-repository
+  repo_label: "Click here for codebase"
 
 plugins:
   - search
